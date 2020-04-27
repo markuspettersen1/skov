@@ -20,4 +20,8 @@ label, input, textarea{
     width: 300px;
 }
 
+video{
+    height: 100vh;
+}
+
 
