@@ -62,8 +62,21 @@
     padding: 5%;
 }
 
+/*
 .knap1{
     background-color: white;
+}
+*/
+.boks4{
+    background-color: #7B8855; 
+    display: flex;
+    justify-content: center;
+}
+.boks4 iframe{
+    border: none;
+}
+.boks5{
+  background-color: #7B8855;   
 }
 /*Contact skema*/
 .contact-h3{
@@ -78,11 +91,18 @@ form{
     justify-content: center;
     align-items: center;
     height: 100vh;
+     color: white;
+   
 }
 
 label, input, textarea{
     display: block;
     width: 300px;
+    
+}
+textarea, input, button{
+    background-color: rgba(255, 255, 255, 0.50);
+    color: white;
 }
 
 
