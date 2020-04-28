@@ -37,8 +37,9 @@
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
-    height: 45vh;
     color: white;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -52,15 +53,33 @@
 */
 
 .ikon{ 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 300px;
     justify-content: center;
     display:flex;  
     
 }
+
 .ikon img{
+    width: 40%;
+    padding: 10%;
+    
+}
+
+.skrald img{
+    width: 55%;
+}
+
+.mand img{
+    width: 35%
+}
+/*.ikon img{
    max-width: 100px;
     max-height: 200px;
     padding: 10px; 
-}
+}*/
 
 .boks3{
     background-color: #1D1E47;
@@ -80,20 +99,22 @@
     background-color: white;
 }
 */
-.boks4{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.boks4 iframe{
+
+.add{
     border: none;
     align-items: center;
     display: flex;
-    width: 100%;
+    justify-content: center;
+}
+
+.add iframe {
+    width: 970px;
+    height: 250px;
 }
 .boks5{
   background-color: #7B8855;   
 }
+
 /*Contact skema*/
 .contact-h3{
     display: flex;
@@ -121,7 +142,8 @@ textarea, input, button{
     color: white;
 }
 
-footer{
+.footer{
+    display: flex;
     background-color: #7B8855;
     justify-content: center;
     
@@ -129,6 +151,8 @@ footer{
 footer img{
     height: 100px;
     align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 
