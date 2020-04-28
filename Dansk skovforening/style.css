@@ -53,6 +53,7 @@
 .boks3{
     background-color: #1D1E47;
     color: white;
+    height: 100vh;
 }
 .quiz-boks{
     background-color: rgba(255, 255, 255, 0.50);
@@ -67,13 +68,16 @@
     background-color: white;
 }
 */
-.boks4{
-    background-color: #7B8855; 
+.boks4{ 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .boks4 iframe{
     border: none;
+    align-items: center;
+    display: flex;
+    width: 100%;
 }
 .boks5{
   background-color: #7B8855;   
