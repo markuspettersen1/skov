@@ -1,5 +1,6 @@
 
 /*boks1*/
+
 .boks1{
     width: 100%;
     height: 100vh;
@@ -23,16 +24,16 @@
     color: white;
 }
 .boks2div{
-    background-color: darkseagreen;
+    background-color: #7B8855;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
 }
 
 .boks2{
     text-align: center;
-   
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
@@ -46,11 +47,24 @@
 }
 .ikon{ 
     justify-content: center;
-    display:flex;
-    
+    display:flex;  
     
 }
+.boks3{
+    background-color: #1D1E47;
+    color: white;
+}
+.quiz-boks{
+    background-color: rgba(255, 255, 255, 0.50);
+    color: white;
+}
+.padding-quiz{
+    padding: 5%;
+}
 
+.knap1{
+    background-color: white;
+}
 /*Contact skema*/
 .contact-h3{
     display: flex;
