@@ -65,33 +65,70 @@
             <iframe src="Add/pernille/index.html" autoplay></iframe>
         </div>
     
-    
-    <div class="boks5">
-        <container>
-            <form>
-            <h3 class="contact-h3">Kontakt oss</h3>
-            <label class="d-block">
-                Fullt navn
-                <input type="name" class="name">
-            </label>
-            <label class="d-block">
-                Email
-                <input type="email" class="email">
-            </label>
-            <label class="d-block">
-                Melding
-                <textarea></textarea>
-            </label>
-            <button type="submit">Send melding</button>
-        </form>
-        </container>
-    </div>
-    
+    <div class="tilmeld">
 
-    <footer class="footer">
+        <form class="needs-validation d-flex justify-content-center align-items-center padding" novalidate>
+            <h1>Tilmeld som frivelig</h1>
+            <div class="form-row">
+              <div class="col-md-12 mb-12">
+                <label for="validationCustom01">Fornavn</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+                <div class="invalid-feedback">
+                    Vennligst skriv ditt fornavn
+                  </div>
+              </div>
+              <div class="col-md-12 mb-12">
+                <label for="validationCustom02">Etternavn</label>
+                <input type="text" class="form-control" id="validationCustom02" required>
+             
+                <div class="invalid-feedback">
+                    Vennligst skriv ditt etternavn
+                  </div>
+              </div>
+              <div class="col-md-12 mb-12">
+                <label for="validationCustomUsername">Email</label>
+                <div class="input-group">
+                  <input type="email" class="form-control"  required>
+                  <div class="invalid-feedback">
+                    Vennligst skriv din email
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 mb-12">
+                <label>Motivasjon</label>
+             <textarea class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+            
+            </div>
+            <button class="btn btn-primary" type="submit">Send besked</button>
+          </form>
+
+          </div>
+
+        <script>
+            
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+        </script>
+    
+<div class="footer">
         <img src="img/tre.png">
-    </footer>
-   
+</div>
 
 
     <script src="skov.js"></script>

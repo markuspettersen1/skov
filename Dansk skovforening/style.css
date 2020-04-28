@@ -1,4 +1,8 @@
 
+.padding{
+    padding: 4%;
+}
+
 /*boks1*/
 
 .boks1{
@@ -23,6 +27,8 @@
     position: relative;
     color: white;
 }
+
+/*Boks 2*/
 .boks2div{
     background-color: #7B8855;
     width: 100%;
@@ -81,6 +87,8 @@
     padding: 10px; 
 }*/
 
+/*Boks 3*/
+
 .boks3{
     background-color: #1D1E47;
     color: white;
@@ -115,40 +123,38 @@
   background-color: #7B8855;   
 }
 
-/*Contact skema*/
-.contact-h3{
-    display: flex;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-     color: white;
-   
+/*Tilmeld*/
+
+.tilmeld {
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
 }
 
-label, input, textarea{
-    display: block;
-    width: 300px;
-    
+.tilmeld form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-textarea, input, button{
-    background-color: rgba(255, 255, 255, 0.50);
-    color: white;
+
+.tilmeld button{
+    margin-top: 2%;
 }
+
+
+/*Footer*/
 
 .footer{
     display: flex;
     background-color: #7B8855;
     justify-content: center;
+    height: 200px;
+    align-items: center;
     
 }
-footer img{
+.footer img{
     height: 100px;
     align-items: center;
     justify-content: center;
