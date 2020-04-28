@@ -37,20 +37,31 @@
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
-    height: 40vh;
+    height: 45vh;
+    color: white;
 
 }
 
+/*
 .boks2 img{
     max-width: 100px;
+    max-height: 200px;
     padding: 20px;
     
 }
+*/
+
 .ikon{ 
     justify-content: center;
     display:flex;  
     
 }
+.ikon img{
+   max-width: 100px;
+    max-height: 200px;
+    padding: 10px; 
+}
+
 .boks3{
     background-color: #1D1E47;
     color: white;
