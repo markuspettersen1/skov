@@ -105,6 +105,10 @@ textarea, input, button{
     color: white;
 }
 
+footer{
+    background-color: #7B8855;
+    justify-content: center;
+}
 
 
 /*quiz*/
