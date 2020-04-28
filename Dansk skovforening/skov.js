@@ -1,2 +1,48 @@
 //Javascript
-
+<script>
+    // globale variabler - synlige for hele skriptet
+	var questions, score, feedback, button;
+    
+    score = 0;
+    button = document.getElementById('start');
+	button.addEventListener('click', runQuiz);
+    
+    feedback = document.getElementById('result');
+	
+    // 2-dimensionel array
+	questions = [
+            ['Hvor tit tager du i skoven?', 1], // questions[0]
+            ['How many moons does Saturn have?', 31],
+            ['How many moons does Venus have?', 0],
+            ['How many moons does Mars have?', 2]
+                ];
+    
+    // console.log(questions[0][0]); udgiver How many moons does Earth have? i konsolen.
+	
+	function runQuiz(){
+        // loop igennem array questions
+        for(var i=0; i<questions.length; i++){
+            askQuestion(questions[i]); // iterationer med kald til funktionen med parameter variablen i
+        };  
+        giveFeedback(); // kalder funktionen feedback, når quizzet er afsluttet
+    }
+	
+	function askQuestion(array){ // funktion med argument
+        //console.log(array[1]);
+        // lokal variable med nøgleord let
+        let answer = parseInt(prompt(array[0],'')); //skaber en prompt dialog med mulighed for bruger input
+        // parseInt forvandler en string til et helt nummer (integer)
+        if(answer === array[1]){ // i tilfælde af et rigtig svar
+                alert('Correct!');
+                score++;
+           } else { // forkert svar
+               alert('Sorry, the correct answer is ' + array[1])
+           }
+    }  
+	
+	function giveFeedback(){
+        feedback.innerHTML = 'You got ' + score + ' out of ' + questions.length + ' questions right!';
+        button.removeEventListener('click', runQuiz); // quiz er afsluttet og kan ikke startes igen.
+    }
+	
+</script>

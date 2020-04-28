@@ -37,6 +37,7 @@
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
+    height: 40vh;
 
 }
 
@@ -113,6 +114,10 @@ footer{
     background-color: #7B8855;
     justify-content: center;
     
+}
+footer img{
+    height: 100px;
+    align-items: center;
 }
 
 
