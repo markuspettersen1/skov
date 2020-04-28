@@ -1,4 +1,5 @@
 //Javascript
+
 <script>
     // globale variabler - synlige for hele skriptet
 	var questions, score, feedback, button;
@@ -11,10 +12,11 @@
 	
     // 2-dimensionel array
 	questions = [
-            ['Hvor tit tager du i skoven?', 1], // questions[0]
-            ['How many moons does Saturn have?', 31],
-            ['How many moons does Venus have?', 0],
-            ['How many moons does Mars have?', 2]
+            ['Hvor mange uger kan det tage for frugt og grønt at nedbrydes i skoven?', 5], // questions[0]
+            ['Hvor mange måneder kan det tage for papir og aviser, at nedbrydes i skoven?', 12],
+            ['Hvor mange år kan det tage for en alluminiumsdåse at nedbrydes i skoven?', 500],
+            ['Hvor mange år kan det tage for en glasflaske at nedbrydes i skoven?', 1000000]
+            ['Er det en god ide at smide skrald i skoven? ', 'nej']
                 ];
     
     // console.log(questions[0][0]); udgiver How many moons does Earth have? i konsolen.
@@ -33,10 +35,10 @@
         let answer = parseInt(prompt(array[0],'')); //skaber en prompt dialog med mulighed for bruger input
         // parseInt forvandler en string til et helt nummer (integer)
         if(answer === array[1]){ // i tilfælde af et rigtig svar
-                alert('Correct!');
+                alert('Det er rigtig svaret!');
                 score++;
            } else { // forkert svar
-               alert('Sorry, the correct answer is ' + array[1])
+               alert('Desværre, det rigtige svar er ' + array[1])
            }
     }  
 	
