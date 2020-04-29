@@ -4,7 +4,10 @@
 .padding{
     padding: 4%;
 }
-nav img{}
+nav img{
+    height: 60px;
+    padding-left: 20px;
+}
 
 /*boks 1*/
 .boks1{
