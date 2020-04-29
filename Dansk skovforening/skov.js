@@ -36,7 +36,7 @@ questions = [
  ['Hvor mange uger kan det tage for frugt og grønt at nedbrydes i skoven?', 5], // questions[0]
  ['Hvor mange måneder kan det tage for papir og aviser, at nedbrydes i skoven?', 12],
  ['Hvor mange år kan det tage for en alluminiumsdåse at nedbrydes i skoven?', 500],
- ['Hvor mange år kan det tage for en glasflaske at nedbrydes i skoven?', 1000000]
+ ['Hvor mange år kan det tage for en glasflaske at nedbrydes i skoven?', 1000000],
  ['Er det en god ide at smide skrald i skoven? ', 'nej']
      ];
 
@@ -64,7 +64,7 @@ if(answer === array[1]){ // i tilfælde af et rigtig svar
 }  
 
 function giveFeedback(){
-feedback.innerHTML = 'You got ' + score + ' out of ' + questions.length + ' questions right!';
+feedback.innerHTML = 'Du fik ' + score + ' ud af ' + questions.length + ' svar rigtigt!';
 button.removeEventListener('click', runQuiz); // quiz er afsluttet og kan ikke startes igen.
 }
 

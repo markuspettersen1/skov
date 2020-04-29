@@ -6,28 +6,33 @@
     <title>Skovforeningen</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    
+    <nav class="navbar navbar-light bg-light">
+        <img src="img/tre.png">
+        <p>hej</p>
     </nav>
+    
     <div class="boks1">
         <video autoplay muted loop>
             <source src="video/baggrundvideo.mp4" alt="skovvideo" type="video/mp4">
         </video>
         
-        <div class="indholdboks1">
+        <div class="indholdboks1 padding">
             <h1>Er du vores nye frivillige?</h1>
             <h3>- vil du hjælpe, og passe på naturen?</h3>
         </div>
     </div>
     
-    
-    <div class="boks2-h1 padding">
-        <h1>Sådan kan du hjælpe</h1>
-    </div>
-    
     <div class="boks2div container-fluid padding">
         <div class="row boks2 padding">
+           
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <h1>Sådan kan du hjælpe</h1>
+            </div>
+           
             <div class="col-xs-12 col-md-6 col-lg-4 ikon skrald">
                 <img alt="skrald" src="img/skrallespand1.png">
                 <p>Der er desværre mange der taber skrald i skoven...</p>
@@ -43,32 +48,30 @@
             <div class="col-xs-12 col-md-6 col-lg-4 ikon">
                 <img alt="skraldespand" src="img/trash.png">
                 <p>Læg det i stedet i <br>
-                    skraldespanden, så skader<br>
-                    det ikke naturen</p>
+                    skraldespanden, så <br>
+                    skader det ikke naturen</p>
             </div>
         
         </div>
     </div>
-
-   
     
     
-<!-- skal video fra sidste uge med????
-
-
-<video src="video/IMG_0369.mp4" alt="skovskrald" width="300px" height="auto" autoplay muted loop></video> -->
+    <div>
+        <video src="video/IMG_0369.mp4" alt="skovskrald" width="300px" height="auto" autoplay muted loop></video> 
+    </div>
     
     
     
-    <div class="fluid boks3">
-        <div class="row padding-quiz">
-        <div class="tekst-boks3 col-xs-12 col-md-12 col-lg-6 padding">
+    <div class="container-fluid boks3">
+        <div class="row padding-quiz boks3-green">
+        <div class="tekst-boks3 col-xs-12 col-s-10 col-md-10 col-lg-10 col-xl-6 padding">
             <h2>Hjælp os med at holde skoven ren</h2>
             <p>Desværre er det et stort problem, at der bliver efterladt skrald i skoven. <br>
             For det første, er bestemt ikke kønt at se på.
             For det andet, er det farligt for dyrene. Større dyr som hjorte, ræve og harer kan skære sig på ståltråd, glas og dåser, og de små som mus og små rovdyr, kan blive fanget i glas og flasker med madrester. 
             <br>
             Og til sidst, men ikke mindst, er meget affald også giftigt for naturen. bl.a. batterier, mobiltelefoner, og plastik indeholder tungmetaller og giftige stoffer, som slet ikke hører til i skoven.
+            <br>
             <br>
             Alt det skrald folk smider i naturen, forsvinder nemlig ikke sådan lige af sig selv, og det tager lægere tid end man tror at nedbrydes. 
             <br>Prøv testen, og se om du kan gætte hvor længe det kan tage for f.eks. en tom dåse, at nedbrydes i skoven.
@@ -77,9 +80,9 @@
         </div>
         
 <!--  quiz      -->
-            <div class="quiz-boks col-xs-12 col-md-12 col-lg-6 padding-quiz">
-                <h3> Hvornår nedbrydes skrald i skoven?</h3>
-                <button id="start">Prøv om du kan svare her!
+            <div class="quiz-boks col-xs-10 col-md-10 col-lg-10 col-xl-4 padding-quiz">
+                <h3> Hvornår nedbrydes <br> skrald i skoven?</h3>
+                <button class="btn btn-success" id="start">Prøv om du kan svare her!
                 </button>
                 <p id="result"></p>
             </div>
@@ -127,13 +130,15 @@
              <textarea class="form-control"></textarea>
               </div>
             </div>
-            <button class="btn btn-primary" type="submit">Send besked</button>
+            <button class="btn btn-success" type="submit">Send besked</button>
           </form>
 
           </div>
+
     
 <div class="footer">
         <img src="img/tre.png">
+        <p>© Louise Henningsen, Markus Pettersen og Pernille Lind</p>
 </div>
 
 
