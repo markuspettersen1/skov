@@ -1,7 +1,10 @@
-
+*{
+    font-family: 'Rubik', sans-serif;
+}
 .padding{
     padding: 4%;
 }
+nav img{}
 
 /*boks 1*/
 .boks1{
@@ -11,6 +14,15 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-color: rgba(51, 65, 43, 0.24);
+    text-align: center;
+ 
+}
+
+.boks1 h3{
+    font-size: 22px;
+    font-weight: 400;
+   
 }
 .boks1 video{
     object-fit: cover;
@@ -20,12 +32,14 @@
     left: 0;
     position: fixed;
     z-index: -1;
+    
 }
 
 .indholdboks1{
     z-index: 1;
     position: relative;
     color: white;
+    width: 100%;
 }
 
 /*Boks 2*/
@@ -45,6 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    
  
 
 }
@@ -54,6 +69,7 @@
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
+
     color: white;
     display: flex;
     justify-content: center;
@@ -80,17 +96,17 @@
 }
 
 .ikon img{
-    width: 40%;
+    max-width: 48%;
     padding: 10%;
     
 }
 
 .skrald img{
-    width: 55%;
+    max-width: 64%;
 }
 
 .mand img{
-    width: 35%
+    max-width: 40%
 }
 /*.ikon img{
    max-width: 100px;
@@ -113,9 +129,10 @@
 }
 
 .boks3 p{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 180%;
     hyphens: auto;
+    max-width: 600px;
 }
 
 
@@ -126,8 +143,15 @@
     background-color: rgba(255, 255, 255, 0.50);
     color: white;
     max-height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
-    
+}
+.quiz-boks h3{
+    font-size: 22px;
+    text-align: center
 }
 .padding-quiz{
     padding: 5%;
@@ -137,6 +161,9 @@
 #start{
     padding: 2%;
     margin-top: 5%;
+    font-family: 'Rubik', sans-serif;
+    width: 300px;
+    
 }
 
 
@@ -179,14 +206,17 @@
     flex-direction: column;
     align-items: center;
     background-color: #eeeeee;
+    color: #294313;
 }
+
 .tilmeld form h1{
     margin-bottom: 5%;
+    color: #294313;
 }
 .tilmeld button{
     margin-top: 5%;
     padding: 1%;
-    background-color: #7B8855;
+    
     
 }
 
@@ -196,10 +226,17 @@
 .footer{
     display: flex;
     background-color: #7B8855;
-    justify-content: center;
+    justify-content: flex-end;
     height: 200px;
     align-items: center;
+    flex-direction: column;
     
+    
+}
+.footer p{
+    color: #276208;
+    font-size: 12px;
+    padding-top: 30px;
 }
 .footer img{
     height: 100px;

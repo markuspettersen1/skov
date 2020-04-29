@@ -64,7 +64,7 @@ if(answer === array[1]){ // i tilfælde af et rigtig svar
 }  
 
 function giveFeedback(){
-feedback.innerHTML = 'You got ' + score + ' out of ' + questions.length + ' questions right!';
+feedback.innerHTML = 'Du fik ' + score + ' ud af ' + questions.length + ' svar rigtigt!';
 button.removeEventListener('click', runQuiz); // quiz er afsluttet og kan ikke startes igen.
 }
 
